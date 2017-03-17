@@ -14,10 +14,10 @@
         }
     },
     "scripts": {
-        "post-update-cmd": [
+        "post-package-install": [
             "php BowerExecute.php"
         ],
-        "post-install-cmd": [
+        "post-package-update": [
             "php BowerExecute.php"
         ]
     }
