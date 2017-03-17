@@ -1,0 +1,8 @@
+{
+    "name": "sqiva/free",
+    "description": "free",
+    "type": "project",
+    "license": "proprietary",
+    "minimum-stability": "stable",
+    "require": {}
+}
