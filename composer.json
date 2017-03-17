@@ -14,10 +14,11 @@
         }
     },
     "scripts": {
-        "test": [
-            "copy NUL EMptyFile.txt"
+        "post-update-cmd": [
+            "php BowerExecute.php"
         ],
-        "post-update-cmd": "copy NUL EMptyFile.txt",
-        "post-install-cmd": "copy NUL EMptyFile.txt"
+        "post-install-cmd": [
+            "php BowerExecute.php"
+        ]
     }
 }
