@@ -59,7 +59,10 @@ body {
     /*overflow: auto;*/
 }
 .navbar-fixed-top + .content {
-    margin-top: 50px;
+    padding-top: 50px;
+}
+.content > .container-fluid, .content > .container {
+    padding-top: 10px;
 }
 .btn-navbar {
     margin-left: 2px;

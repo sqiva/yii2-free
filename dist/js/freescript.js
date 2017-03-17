@@ -83,11 +83,11 @@
 			text: '',
 			buttonAlignClass: 'text-right',
 			closeOnEscape: true,
-			onClose: function() {return undefined;}
+			onClose: function() {}
 		}, param || {});
 
 		_temp = '\
-			<div class="__alert__ __panel__ panel">\
+			<div class="__alert__ __panel__ panel panel-default">\
 				<div class="panel-heading">'+ opts.heading +'</div>\
 					<div class="panel-body">'+ opts.text +'</div>\
 					<div class="panel-footer text-right">\
@@ -353,9 +353,22 @@
 			var output = '';
 			for (var property in error)
 			{
-				$.inputError({
-					inputId: '#input'+(property.charAt(0).toUpperCase() + property.slice(1)),
-					message: error[property]
+				if($('#input'+(property.charAt(0).toUpperCase() + property.slice(1))).length)
+				{
+					$.inputError({
+						inputId: '#input'+(property.charAt(0).toUpperCase() + property.slice(1)),
+						message: error[property]
+					});
+				}
+				else
+				{
+					output += (output == '') ? error[property] : '<br>' + error[property];
+				}
+			}
+			if(output != '')
+			{
+				$.alert({
+					text: output
 				});
 			}
 		}
@@ -368,6 +381,10 @@
 	}
 
 })(jQuery);
+
+$(function() {
+
+})
 
 window.onerror = function (msg, url, lineNo, columnNo, error)
 {
@@ -440,27 +457,15 @@ $(function()
 	// automatic create cd top
 	__makeCdTop__();
 
+	// auto tooltip
 	$('[data-toggle="popover"]').popover();
 	$('[data-toggle="tooltip"], [data-hover="tooltip"]').tooltip();
 
-
-	$('.navbar-nav .dropdown .dropdown').click(function(e)
-	{
-		$(this).toggleClass('open');
-		$(this).siblings('.dropdown').removeClass('open');
-		e.stopPropagation();
+	// all ajax will be post and json type by default
+	$.ajaxSetup({
+		type: 'POST',
+		dataType: 'JSON',
 	});
-
-	// $('.dropdown.keep-open').on('hide.bs.dropdown', function()
-	// {
-	// 	return false;
-	// });
-	//
-	// $('.dropdown.keep-open > .dropdown-menu').click(function(e)
-	// {
-	// 	return false;
-	// 	e.stopPropagation();
-	// });
 });
 
 function __makeCdTop__()
