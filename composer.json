@@ -5,7 +5,8 @@
     "license": "proprietary",
     "minimum-stability": "stable",
     "require": {
-        "wenzhixin/bootstrap-table" : "*"
+        "wenzhixin/bootstrap-table" : "*",
+        "twbs/bootstrap" : "*"
     },
     "autoload": {
         "psr-4": {
