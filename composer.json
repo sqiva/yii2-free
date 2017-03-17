@@ -6,8 +6,7 @@
     "minimum-stability": "stable",
     "require": {
         "wenzhixin/bootstrap-table" : "*",
-        "twbs/bootstrap" : "*",
-        "bower-asset/sqiva" : "*"
+        "twbs/bootstrap" : "*"
     },
     "autoload": {
         "psr-4": {
