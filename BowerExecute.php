@@ -1,7 +1,5 @@
 <?php
 $dir = '@vendor';
 
-//~ create bash session
+//~ create bower install
 exec("\"C:\Program Files\Git\bin\sh.exe\" --login -i -c \"bower install\"");
-//~ exit session
-exec('exit');
