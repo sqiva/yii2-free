@@ -14,7 +14,7 @@
         }
     },
     "scripts": {
-        "post-update-cmd": "\"C:\Program Files\Git\bin\sh.exe\" --login -i -c \"bower install\"",
-        "post-install-cmd": "\"C:\Program Files\Git\bin\sh.exe\" --login -i -c \"bower install\""
+        "post-update-cmd": "\"C:\\Program Files\\Git\\bin\\sh.exe\" --login -i -c \"bower install\"",
+        "post-install-cmd": "\"C:\\Program Files\\Git\\bin\\sh.exe\" --login -i -c \"bower install\""
     }
 }
