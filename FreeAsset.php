@@ -4,37 +4,39 @@ use yii\web\AssetBundle;
 
 class FreeAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/sqiva/free/dist';
+    public $sourcePath = '@bower';
 	public $css = [
-		'css/bootstrap.min.css',
-		'css/normalize.css',
-		'css/bootstrap-datetimepicker.min.css',
-		//~ 'css/bootstrap-table.min.css',
-		'css/bootstrap-select.css',
-		'css/font-awesome.min.css',
-		'css/sm-core-css.css',
-		'css/jquery.smartmenus.bootstrap.css',
+		'sqiva/free/dist/css/bootstrap.min.css',
+		'sqiva/free/dist/css/normalize.css',
+		'sqiva/free/dist/css/bootstrap-datetimepicker.min.css',
+		//~ 'sqiva/free/dist/css/bootstrap-table.min.css',
+		'sqiva/free/dist/css/bootstrap-select.css',
+		'sqiva/free/dist/css/font-awesome.min.css',
+		'sqiva/free/dist/css/sm-core-css.css',
+		'sqiva/free/dist/css/jquery.smartmenus.bootstrap.css',
 		// CUSTOM
-		'css/freestyle.css',
-		'css/theme1.css',
+		'sqiva/free/dist/css/freestyle.css',
+		'sqiva/free/dist/css/theme1.css',
+		'bootstrap-table/src/bootstrap-table.css',
 		//~ 'fonts/open-sans/opensans.css',
 	];
 	public $js = [
-		'js/bootstrap.min.js',
-		'js/moment.min.js',
-		'js/bootstrap-datetimepicker.min.js',
-		//~ 'js/bootstrap-table.min.js',
-		'js/bootstrap-select.min.js',
-		'js/bootstrap-maxlength.js',
-		'js/jquery.number.min.js',
-		'js/Chart.bundle.min.js',
-		'js/jquery.smartmenus.min.js',
-		'js/jquery.smartmenus.bootstrap.min.js',
+		'sqiva/free/dist/js/bootstrap.min.js',
+		'sqiva/free/dist/js/moment.min.js',
+		'sqiva/free/dist/js/bootstrap-datetimepicker.min.js',
+		//~ 'sqiva/free/dist/js/bootstrap-table.min.js',
+		'sqiva/free/dist/js/bootstrap-select.min.js',
+		'sqiva/free/dist/js/bootstrap-maxlength.js',
+		'sqiva/free/dist/js/jquery.number.min.js',
+		'sqiva/free/dist/js/Chart.bundle.min.js',
+		'sqiva/free/dist/js/jquery.smartmenus.min.js',
+		'sqiva/free/dist/js/jquery.smartmenus.bootstrap.min.js',
 		// CUSTOM
-		'js/freescript.js',
-		'js/list_menu.js',
+		'sqiva/free/dist/js/freescript.js',
+		'sqiva/free/dist/js/list_menu.js',
+		'bootstrap-table/src/bootstrap-table.js',
 	];
 	public $depends = [
-		'sqiva\free\BootstrapTableAsset',
+		//~ 'sqiva\free\BootstrapTableAsset'
 	];
 }
