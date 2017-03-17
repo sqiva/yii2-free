@@ -4,7 +4,9 @@
     "type": "project",
     "license": "proprietary",
     "minimum-stability": "stable",
-    "require": {},
+    "require": {
+        "wenzhixin/bootstrap-table" : "*"
+    },
     "autoload": {
         "psr-4": {
             "sqiva\\free\\": ""
