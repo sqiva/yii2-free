@@ -18,7 +18,7 @@
             "@php BowerExecute.php",
             "phpunit"
         ]
-        "post-update-cmd": "php BowerExecute.php",
-        "post-install-cmd": "php BowerExecute.php"
+        //"post-update-cmd": "php BowerExecute.php",
+        //"post-install-cmd": "php BowerExecute.php"
     }
 }
