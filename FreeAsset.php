@@ -9,7 +9,7 @@ class FreeAsset extends AssetBundle
 		'css/bootstrap.min.css',
 		'css/normalize.css',
 		'css/bootstrap-datetimepicker.min.css',
-		'css/bootstrap-table.min.css',
+		//~ 'css/bootstrap-table.min.css',
 		'css/bootstrap-select.css',
 		'css/font-awesome.min.css',
 		'css/sm-core-css.css',
@@ -23,7 +23,7 @@ class FreeAsset extends AssetBundle
 		'js/bootstrap.min.js',
 		'js/moment.min.js',
 		'js/bootstrap-datetimepicker.min.js',
-		'js/bootstrap-table.min.js',
+		//~ 'js/bootstrap-table.min.js',
 		'js/bootstrap-select.min.js',
 		'js/bootstrap-maxlength.js',
 		'js/jquery.number.min.js',
@@ -33,5 +33,8 @@ class FreeAsset extends AssetBundle
 		// CUSTOM
 		'js/freescript.js',
 		'js/list_menu.js',
+	];
+	public $depends = [
+		'sqiva\free\BootstrapTableAsset',
 	];
 }
